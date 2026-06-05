@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
         </div>
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div key={index} className="feature-card">
+            <div key={index} className="feature-card" data-aos="fade-right">
               <div className="feature-icon">{feature.icon}</div>
               <h3>{feature.title}</h3>
               <p>{feature.desc}</p>

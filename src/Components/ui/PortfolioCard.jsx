@@ -4,7 +4,7 @@ import './PortfolioCard.css';
 
 const PortfolioCard = ({ title, category, image, onClick }) => {
   return (
-    <div className="portfolio-card" onClick={onClick}>
+    <div className="portfolio-card" onClick={onClick} data-aos="fade-up">
       <div className="portfolio-image" style={{ backgroundColor: image }}>
         <div className="overlay">
           <span>View Project →</span>

@@ -7,7 +7,7 @@ import './CTA.css';
 const CTA = () => {
   return (
     <section className="cta">
-      <div className="container cta-container">
+      <div className="container cta-container" data-aos="fade-up">
         <h2>Ready to Bring Your Vision to Life?</h2>
 
         <p>

@@ -102,7 +102,7 @@ ${formData.message}
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="contact-form">
+          <form onSubmit={handleSubmit} className="contact-form" data-aos="zoom-in">
 
             <div className="form-group">
               <input

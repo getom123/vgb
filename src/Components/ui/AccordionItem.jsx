@@ -4,7 +4,7 @@ import './AccordionItem.css';
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="accordion-item">
+    <div className="accordion-item" data-aos="fade-up">
       <button className="accordion-header" onClick={onClick}>
         <span>{question}</span>
         <span className={`accordion-icon ${isOpen ? 'open' : ''}`}>▼</span>

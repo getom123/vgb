@@ -18,7 +18,7 @@ const Testimonials = () => {
           <h2>What Clients Say</h2>
           <p>Trusted by businesses worldwide</p>
         </div>
-        <div className="testimonial-container">
+        <div className="testimonial-container" data-aos="fade-right">
           <div className="testimonial-card">
             <div className="quote">"</div>
             <p className="testimonial-text">{testimonials[current].text}</p>

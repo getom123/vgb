@@ -1,5 +1,8 @@
 // src/App.jsx
-import React from 'react';
+// import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import About from './Components/About';
@@ -15,6 +18,14 @@ import Footer from './Components/Footer';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+  }, []);
+  
   return (
     <div className="app">
       <Navbar />

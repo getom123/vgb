@@ -10,6 +10,7 @@
   --gray-dark: #111827;
   --gray-medium: #6b7280;
   --gray-light: #f9fafb;
+  --text-other: #1e293b;
 
   --white: #ffffff;
 
@@ -52,6 +53,7 @@ h1 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: var(--text-other);
 }
 
 h2 {

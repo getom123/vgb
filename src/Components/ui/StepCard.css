@@ -48,7 +48,8 @@
 }
 
 .step-card h3 {
-  color: var(--blue-primary);
+  /* color: var(--blue-primary); */
+  color: var(--text-other);
   margin-bottom: 0.75rem;
   transition: var(--transition);
 }

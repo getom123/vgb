@@ -1,0 +1,60 @@
+/* src/components/ui/ServiceCard.css */
+
+.service-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(234, 88, 12, 0.15);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.08),
+    rgba(234, 88, 12, 0.08)
+  );
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 18px;
+  font-size: 1.8rem;
+  color: var(--blue-primary);
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.08);
+  color: var(--orange-primary);
+}
+
+.service-card h3 {
+  color: var(--blue-primary);
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.service-card:hover h3 {
+  color: var(--orange-primary);
+}
+
+.service-card p {
+  color: var(--gray-medium);
+  line-height: 1.7;
+  margin: 0;
+}

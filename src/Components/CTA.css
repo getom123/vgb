@@ -1,0 +1,18 @@
+/* src/components/CTA.css */
+
+.cta {
+  background: linear-gradient(135deg, var(--blue-primary) 0%, #0f2b5e 100%);
+  text-align: center;
+  color: var(--white);
+}
+
+.cta h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  opacity: 0.85;
+}

@@ -1,18 +1,26 @@
 /* src/components/Contact.css */
+
 .contact {
-  background-color: var(--gray-light);
+  background: #f8fafc;
 }
 
 .contact-container {
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
 .contact-form {
   background: var(--white);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: var(--shadow-md);
+
+  padding: 2.5rem;
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(37, 99, 235, 0.08);
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.06),
+    0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
 .form-group {
@@ -20,29 +28,101 @@
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
   width: 100%;
-  padding: 0.75rem;
+
+  padding: 1rem 1.1rem;
+
   border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  transition: var(--transition);
+
+  border-radius: 14px;
+
+  background: #fff;
+
+  font-size: 0.95rem;
+
+  color: var(--gray-dark);
+
+  transition: all 0.25s ease;
+
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-group select {
+  cursor: pointer;
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
   outline: none;
+
   border-color: var(--orange-primary);
-  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
+
+  box-shadow:
+    0 0 0 4px rgba(249, 115, 22, 0.12);
+
+  transform: translateY(-1px);
 }
 
 .error {
-  color: #dc2626;
-  font-size: 0.75rem;
-  margin-top: 0.25rem;
   display: block;
+
+  margin-top: 0.4rem;
+
+  color: #dc2626;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
 }
 
-.btn-center{
+.btn-center {
+  margin-top: 2rem;
   text-align: center;
+}
+
+.btn-center button {
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Optional info card above form */
+
+.contact-note {
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  padding: 1.25rem;
+
+  border-radius: 16px;
+
+  background: rgba(249, 115, 22, 0.08);
+
+  color: var(--gray-dark);
+}
+
+.contact-note strong {
+  color: var(--orange-primary);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
 }

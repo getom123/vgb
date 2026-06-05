@@ -2,9 +2,9 @@
 import React from 'react';
 import './PortfolioCard.css';
 
-const PortfolioCard = ({ title, category, image }) => {
+const PortfolioCard = ({ title, category, image, onClick }) => {
   return (
-    <div className="portfolio-card">
+    <div className="portfolio-card" onClick={onClick}>
       <div className="portfolio-image" style={{ backgroundColor: image }}>
         <div className="overlay">
           <span>View Project →</span>

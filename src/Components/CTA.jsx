@@ -15,9 +15,9 @@ const CTA = () => {
           let's create something exceptional together.
         </p>
 
-        <Button variant="primary" size="large">
-          Request a Quote →
-        </Button>
+       <a href="#contact"> <Button variant="primary" size="large">
+          Request a Quote
+        </Button></a>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>AgencyHub</h3>
+            <h3>Xprix Design</h3>
             <p>Transforming businesses through digital innovation.</p>
           </div>
           <div className="footer-section">
@@ -22,12 +22,12 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h4>Contact</h4>
-            <p>hello@agencyhub.com</p>
-            <p>+1 (555) 123-4567</p>
+            <a href="mailto:admin@xprixdesign.com">admin@xprixdesign.com</a> <br />
+            <a href="tel:+2349056012206">+234 905 601 2206</a>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 AgencyHub. All rights reserved.</p>
+          <p>&copy; 2024 XprixDesign. All rights reserved.</p>
         </div>
       </div>
     </footer>

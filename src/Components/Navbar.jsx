@@ -12,8 +12,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <div className="logo">
-          <span className="logo-blue">Agency</span>
-          <span className="logo-orange">Hub</span>
+          <span className="logo-orange">Xprix </span>
+          <span className="logo-blue">Design</span>
         </div>
         
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
